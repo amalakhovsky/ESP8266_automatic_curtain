@@ -1,0 +1,11 @@
+LedBlueErrorTimer = 2;
+LedBlueOKShortTimer = 1;
+LedBlueOKLongTimer = 0;
+
+
+MotorDirectionClose = gpio.LOW;
+MotorDirectionOpen = gpio.HIGH;
+
+MotorPowerTimerOpen = 3;
+MotorPowerTimerClose = 4;
+
