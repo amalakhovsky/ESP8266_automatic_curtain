@@ -37,6 +37,9 @@ srv:listen(80,function(conn)
 		if (_GET.action == "stop") then
 			print("[HTTPD] Received web request to stop curtain");
 			gpio.write(MotorPower,gpio.LOW);
+			tmr.stop(MotorPowerTimerOpen);
+			tmr.stop(MotorPowerTimerClose);
+			gpio.write(MotorDirection,MotorDirectionClose); --put the relay down, to have less power consumption
 		end
 
 		if (_GET.action == "red") then

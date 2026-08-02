@@ -1,2 +1,16 @@
 <h1>Andrey's automagic curtain</h1>
-Now, with extra cool features!
+<p>Now, with extra cool features!</p>
+<p>
+<input type="button" value="Open" onclick="act('open')">
+<input type="button" value="Close" onclick="act('close')">
+<input type="button" value="Stop" onclick="act('stop')">
+</p>
+<p>
+<input type="button" value="Red" onclick="act('red')">
+<input type="button" value="Green" onclick="act('green')">
+<input type="button" value="Yellow" onclick="act('yellow')">
+<input type="button" value="Off" onclick="act('off')">
+</p>
+<script>
+function act(a){var x=new XMLHttpRequest();x.open("GET","/?key=banana&action="+a,true);x.send();}
+</script>
